@@ -16,6 +16,24 @@
     <h1 class="titulo">Control de Bienes Informáticos</h1>
     <h2 class="subtitulo">Informes</h2>
 
+    <div class="botones-container">
+      <div class="registro-columna">
+        <button class="registroBoton" [routerLink]="['/registro']">Registro</button>
+      </div>
+      <div class="columna botoncolumna1-columna">
+        <button class="botoncolumna1" [routerLink]="['/DAP-SIS']">Por DAP_SIS</button>
+        <button class="botoncolumna1" [routerLink]="['/IPyDirFisica']">IP y Dirección Física</button>
+        <button class="botoncolumna1" [routerLink]="['/equipos-sin-IP']">Equipos sin IP</button>
+        <button class="botoncolumna1" [routerLink]="['/IP-Disponible']">IP Disponible</button>
+      </div>
+      <div class="columna botoncolumna2-columna">
+        <button class="botoncolumna2" [routerLink]="['/area']">Por Área</button>
+        <button class="botoncolumna2" [routerLink]="['/area-Especifica']">Por Área Específica</button>
+        <button class="botoncolumna2" [routerLink]="['/responsable']">Por Responsable</button>
+        <button class="botoncolumna2" [routerLink]="['/responsable-Especifico']">Por Responsable Específico</button>
+      </div>
+    </div>
+
 </main>
 
 <footer>

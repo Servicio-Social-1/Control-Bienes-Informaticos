@@ -1,7 +1,8 @@
 .texto_header{
   color: rgb(175, 175, 175);
   font-size: 10px;
-  display: flex;
+  line-height: 0.5;
+  ;
 }
 
 .titulo {
@@ -18,10 +19,48 @@
   margin-top: 10px;
 }
 
+.header {
+  display: flex;
+}
 
+.registroBoton {
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  width: 100px; /* Ancho mínimo opcional */
+  height: 100px; /* Alto mínimo opcional */
+}
 
+.botoncolumna1 {
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+  width: 100px; /* Ancho mínimo opcional */
+  height: 100px; /* Alto mínimo opcional */
+}
 
+.botoncolumna2 {
+  background-color: orangered;
+  color: white;
+  font-size: 15px;
+  width: 100px; /* Ancho mínimo opcional */
+  height: 100px; /* Alto mínimo opcional */
+}
 
+.botones-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Espacio entre columnas */
+  margin-top: 30px;
+}
+
+.columna,
+.registro-columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Espacio entre botones */
+}
 
 footer {
   display: flex;
