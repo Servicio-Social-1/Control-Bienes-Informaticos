@@ -1,0 +1,149 @@
+body {
+  background-image: url('../../../public/assets/fondo-inicio.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+}
+
+.texto_header{
+  color: rgb(68, 68, 68);
+  font-size: 10px;
+  line-height: 0.5;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px;
+  font: bold;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.registroBoton {
+  width:200px;
+  height:70px;
+  background: rgb(2, 141, 2);
+  border-radius: 20px;
+  color:#fff;
+  font-size: 21px;
+  letter-spacing: 3px;
+  font-family: 'system-ui';
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  transition: all .5s;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+  border: none;
+
+  &:hover {
+    background-color: #005700;
+  }
+}
+
+.botoncolumna1 {
+  width:200px;
+  height:70px;
+  background: #0047AB;
+  border-radius: 20px;
+  color:#fff;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-family: 'system-ui';
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  transition: all .5s;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+  border: none;
+
+
+  &:hover {
+    background-color: #003380;
+  }
+}
+
+.botoncolumna2 {
+  width:200px;
+  height:70px;
+  background: #FF6600;
+  border-radius: 20px;
+  color:#fff;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-family: 'system-ui';
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  transition: all .5s;
+  box-shadow: 0px 3px 3px rgba(0,0,0,.2);
+  border: none;
+  
+
+  &:hover {
+    background-color: #cc5200;
+  }
+}
+
+.botones-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente los hijos */
+  gap: 40px;
+  margin-top: 30px;
+  min-height: 350px; /* Ajusta según el alto que desees */
+}
+
+.columna,
+.registro-columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Espacio entre botones */
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: lightgray; /* o el color que prefieras */
+  color: black;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logofooter {
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}

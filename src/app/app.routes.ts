@@ -9,9 +9,11 @@ import { Area } from './area/area';
 import { AreaEspecifica } from './area-especifica/area-especifica';
 import { Responsable } from './responsable/responsable';
 import { ResponsableEspecifico } from './responsable-especifico/responsable-especifico';
+import { Login } from './login/login';
 
 export const routes: Routes = [
-    {path: '', component: Inicio},
+    {path: '', component: Login},
+    {path: 'inicio', component: Inicio},
     {path: 'registro', component: Registro},
     {path: 'DAP-SIS', component: DAPSIS},
     {path: 'IPyDirFisica', component: IPyDirFisica},
