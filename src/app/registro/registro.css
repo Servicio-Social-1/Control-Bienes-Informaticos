@@ -1,0 +1,69 @@
+.header {
+  display: flex;
+}
+
+.texto_header{
+  color: rgb(68, 68, 68);
+  font-size: 10px;
+  line-height: 0.5;
+}
+
+.logofooter {
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.columna1 {
+  display: grid;
+}
+
+.columna2 {
+  display: grid;
+  height: 100px;
+  margin-left: 20px;
+}
+
+.informacionGeneral {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.informacionTecnica {
+  display: inline-grid;
+  width: 100%;
+  justify-content: center;
+}
+
+.specs {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+
+.titulo {
+    text-align: center;
+    
+}
+
+label {
+  margin: 10px;
+}
+
+fieldset {
+  margin-top: 30px;
+  border: none;
+}
+
+input {
+  height: 25px;
+}
+
+select {
+  height: 30px;
+}
