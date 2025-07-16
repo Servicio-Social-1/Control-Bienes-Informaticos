@@ -1,264 +1,191 @@
 <body>
-    <header>
-        <div class="header">
-            <a href="/index.html">
-                <img class="logofooter" src="./assets/logo-gobierno.jpeg" alt="Logo">
-            </a>
-    <div class="texto_header">
+  <header>
+    <div class="header">
+      <a href="/index.html">
+        <img class="logofooter" src="./assets/logo-gobierno.jpeg" alt="Logo" />
+      </a>
+      <div class="texto_header">
         <p>SECRETARIA DE OBRAS Y SERVICIOS</p>
         <p>DIRECCIÓN GENERAL DE SERVICIOS URBANOS Y SUSTENTABILIDAD</p>
         <p>DIRECCIÓN DE ALUMBRADO PÚBLICO</p>
+      </div>
     </div>
-</div>
-</header>
+  </header>
 
-<h3 class="titulo">
-    INFORMACIÓN GENERAL
-</h3>
+  <h3 class="titulo">INFORMACIÓN GENERAL</h3>
 
-<div class="informacionGeneral">
+  <div class="informacionGeneral">
     <div class="columna1">
-        <label>
-            IDENTIFICADOR
-        </label>
-        <input name="identificador" type="text" id="identificador">
+      <label> IDENTIFICADOR </label>
+      <input name="identificador" type="text" id="identificador" />
 
-        <label>
-            Tipo de Equipo
-        </label>
-        <select name="tipoEquipo" id="tipo_equipos">
-            <option>Seleccione una opción</option>
-            <option>PC</option>
-            <option>ALL IN ONE</option>
-            <option>LAPTOP</option>
-            <option>NOTEBOOK</option>
-            <option>IMPRESORA</option>
-            <option>FOTOCOPIADORA</option>
-        </select>
+      <label> Tipo de Equipo </label>
+      <select name="tipoEquipo" id="tipo_equipos">
+        <option>Seleccione una opción</option>
+        <option>PC</option>
+        <option>ALL IN ONE</option>
+        <option>LAPTOP</option>
+        <option>NOTEBOOK</option>
+        <option>IMPRESORA</option>
+        <option>FOTOCOPIADORA</option>
+      </select>
 
-        <label for="small-input">
-            Modelo
-        </label>
-        <input name="modelo" type="text" id="small-input">
+      <label for="small-input"> Modelo </label>
+      <input name="modelo" type="text" id="small-input" />
 
-        <label for="small-input">
-            Núm Inventario
-        </label>
-        <input name="inventario" type="text" id="small-input">
+      <label for="small-input"> Núm Inventario </label>
+      <input name="inventario" type="text" id="small-input" />
     </div>
 
     <div class="columna2">
-        <label for="small-input">
-            Marca
-        </label>
-        <input name="marca" type="text" id="small-input">
+      <label for="small-input"> Marca </label>
+      <input name="marca" type="text" id="small-input" />
 
-        <label for="small-input">
-            Número serie
-        </label>
-        <input name="serie" type="text" id="small-input">
+      <label for="small-input"> Número serie </label>
+      <input name="serie" type="text" id="small-input" />
 
-        <fieldset>
-            <legend></legend>
-            
-            <input name="impresoraFotocopiadora" id="checkbox-1" type="checkbox">
-            <label for="checkbox-1">
-                Es impresora o fotocopiadora
-            </label>
-        </fieldset>
+      <div class="containerCheckbox"></div>
+      <fieldset>
+        <legend></legend>
+
+        <div class="checkboxImpresora">
+          <input
+            name="impresoraFotocopiadora"
+            id="checkbox-1"
+            type="checkbox"
+          />
+        </div>
+
+        <label for="checkbox-1"> Es impresora o fotocopiadora </label>
+      </fieldset>
     </div>
-</div>
+  </div>
 
-<h3 class="titulo">
-INFORMACIÓN TÉCNICA
-</h3>
-<div class="informacionTecnica">
+  <h3 class="titulo">INFORMACIÓN TÉCNICA</h3>
+  <div class="informacionTecnica">
     <div class="specs">
-        <label for="small-input">
-            Capacidad Disco Duro
-        </label>
-        
-        <label for="small-input">
-            Tipo Procesador
-        </label>
-        
-        <label for="small-input">
-            Velocidad Procesador
-        </label>
-        
-        <label for="small-input">
-            Capacidad Memoria RAM
-        </label>
-        
-        <input name="capacidad" type="text" id="small-input">
-        <input name="procesadorTipo" type="text" id="small-input">
-        <input name="procesadorVelocidad" type="text" id="small-input">
-        <input name="RAM" type="text" id="small-input">
+      <label for="small-input"> Capacidad Disco Duro </label>
+
+      <label for="small-input"> Tipo Procesador </label>
+
+      <label for="small-input"> Velocidad Procesador </label>
+
+      <label for="small-input"> Capacidad Memoria RAM </label>
+
+      <input name="capacidad" type="text" id="small-input" />
+      <input name="procesadorTipo" type="text" id="small-input" />
+      <input name="procesadorVelocidad" type="text" id="small-input" />
+      <input name="RAM" type="text" id="small-input" />
     </div>
-    <!-- Checkbox y listas desplegables -->
-    <div class="perifericos">
-        <input name="teclado" id="checkbox-1" type="checkbox">
-        <label for="checkbox-1">
-            Teclado
-        </label>
+    <div class="container">
+      <div class="checkboxes">
+        <!-- Checkbox y listas desplegables -->
+        <input name="teclado" id="checkbox-1" type="checkbox" />
+        <input name="monitor" id="checkbox-1" type="checkbox" />
+        <input name="mouse" id="checkbox-1" type="checkbox" />
+      </div>
+
+      <div class="perifericos">
+        <label for="checkbox-1"> Teclado </label>
         <select name="tipoTecladocheckbox" id="tipo_teclado">
-        <option>Seleccione una opción</option>
-        <option>Menor a 1 año</option>
-        <option>De 1 a 3 años</option>
-            <option>Entre 3-5 años</option>
-            <option>Mayor a 6 años</option>
-            <option>NO APLICA</option>
+          <option>Seleccione una opción</option>
+          <option>Menor a 1 año</option>
+          <option>De 1 a 3 años</option>
+          <option>Entre 3-5 años</option>
+          <option>Mayor a 6 años</option>
+          <option>NO APLICA</option>
         </select>
 
-        <input
-        name="monitor" 
-            id="checkbox-1" 
-            type="checkbox" 
-            >
-            <label for="checkbox-1">
-                Monitor
-            </label>
-            <select
-            name="tipoMonitorcheckbox"
-            id="tipo_monitor" 
-            >
-            <option>Seleccione una opción</option>
-            <option>Menor a 1 año</option>
-            <option>De 1 a 3 años</option>
-            <option>Entre 3-5 años</option>
-            <option>Mayor a 6 años</option>
-            <option>NO APLICA</option>
+        <label for="checkbox-1"> Monitor </label>
+        <select name="tipoMonitorcheckbox" id="tipo_monitor">
+          <option>Seleccione una opción</option>
+          <option>Menor a 1 año</option>
+          <option>De 1 a 3 años</option>
+          <option>Entre 3-5 años</option>
+          <option>Mayor a 6 años</option>
+          <option>NO APLICA</option>
         </select>
 
-        <input
-            name="mouse" 
-            id="checkbox-1" 
-            type="checkbox" 
-            >
-        <label for="checkbox-1">
-            Mouse
-        </label>
-        <select 
-        name="tipoMousecheckbox"
-        id="tipo_mouse" 
-        >
-        <option>Seleccione una opción</option>
-        <option>Menor a 1 año</option>
-        <option>De 1 a 3 años</option>
-        <option>Entre 3-5 años</option>
-        <option>Mayor a 6 años</option>
-        <option>NO APLICA</option>
+        <label for="checkbox-1"> Mouse </label>
+        <select name="tipoMousecheckbox" id="tipo_mouse">
+          <option>Seleccione una opción</option>
+          <option>Menor a 1 año</option>
+          <option>De 1 a 3 años</option>
+          <option>Entre 3-5 años</option>
+          <option>Mayor a 6 años</option>
+          <option>NO APLICA</option>
         </select>
-        
-        <label for="small-input">
-            Segmento
-        </label>
-        <input name="segmento" type="text" id="small-input">
+
+        <label for="small-input"> Segmento </label>
+        <input name="segmento" type="text" id="small-input" />
+      </div>
+
+      <div class="specs2">
+        <label for="small-input"> Marca del Monitor </label>
+        <input name="marcaMonitor" type="text" id="small-input" />
+
+        <label for="small-input"> Sistema Operativo </label>
+        <input name="SO" type="text" id="small-input" />
+      </div>
+
+      <div class="perifericos2">
+        <input name="lector" id="checkbox-1" type="checkbox" />
+        <label for="checkbox-1"> Lector de CD/DVD </label>
+        <input name="usb" id="checkbox-1" type="checkbox" />
+        <label for="checkbox-1"> Puertos USB </label>
+        <input name="sd" id="checkbox-1" type="checkbox" />
+        <label for="checkbox-1"> Lector de Tarjetas SD </label>
+      </div>
     </div>
+  </div>
 
-    <div class="specs2">
-    <label for="small-input">
-        Marca del Monitor
-    </label>
-    <input name="marcaMonitor" type="text" id="small-input">
+  <div class="diagnostico">
+    <h3 class="titulo">DIAGNÓSTICO</h3>
+    <div class="estados">
+      <label for="small-input"> Estado Actual </label>
+      <input id="estadoActual" type="text" />
 
-    <label for="small-input">
-        Sistema Operativo
-    </label>
-    <input name="SO" type="text" id="small-input">
+      <label for="small-input"> Observaciones </label>
+      <input id="observaciones" type="text" />
     </div>
+  </div>
 
-    <div class="perifericos2">
-        <fieldset>
-            <legend></legend>
-            
-            <input name="lector" id="checkbox-1" type="checkbox">
-            <label for="checkbox-1">
-                Lector de CD/DVD
-            </label>
-            <input name="usb" id="checkbox-1" type="checkbox">
-        <label for="checkbox-1">
-            Puertos USB
-        </label>
-        <input name="sd" id="checkbox-1" type="checkbox">
-        <label for="checkbox-1">
-            Lector de Tarjetas SD
-        </label>
-        </fieldset>
-    </div>
-</div>
-
-<div class="diagnostico">
-    <h3 class="titulo">
-        DIAGNÓSTICO
-    </h3>
-    <label for="small-input">
-        Estado Actual
-    </label>
-    <input name="estado" type="text" id="small-input">
-
-    <label for="small-input">
-        Observaciones
-    </label>
-    <input name="observaciones" type="text" id="small-input">
-</div>
-
-<div class="usuarioYresponsable">
-    <h3 class="titulo">
-        USUARIO Y RESPONSABLE
-    </h3>
-
-    <label for="usuario">
-        Usuario
-    </label>
+  <h3 class="titulo">USUARIO Y RESPONSABLE</h3>
+  <div class="usuarioYresponsable">
+    <label for="usuario"> Usuario </label>
     <select name="usuario" id="usuario">
-        <option>Seleccione una opción</option>
+      <option>Seleccione una opción</option>
     </select>
 
-    <label for="small-input">
-        Área
-    </label>
-    <input name="area" type="text" id="small-input">
+    <label for="small-input"> Área </label>
+    <input name="area" type="text" id="small-input" />
 
-    <label for="responsable">
-        Responsable
-    </label>
+    <label for="responsable"> Responsable </label>
     <select name="responsable" id="responsable">
-        <option>Seleccione una opción</option>
+      <option>Seleccione una opción</option>
     </select>
 
-    <label for="small-input">
-        Cargo
-    </label>
-    <input name="cargo" type="text" id="small-input">
-</div>
+    <label for="small-input"> Cargo </label>
+    <input name="cargo" type="text" id="small-input" />
+  </div>
 
-<a href="/menu/registro">
-    <button type="button">
-        Nuevo USUARIO
-    </button>
-</a>
+  <div class="botones">
+    <a href="/menu/registro">
+      <button type="button">Nuevo USUARIO</button>
+    </a>
 
-<a href="/menu/impresion">
-    <button type="button">
-        Nuevo RESPONSABLE
-    </button>
-</a>
+    <a href="/menu/impresion">
+      <button type="button">Nuevo RESPONSABLE</button>
+    </a>
 
-<a href="/">
-    <button type="button">
-        CERRAR Formulario
-    </button>
-</a>
+    <a href="/">
+      <button type="button">CERRAR Formulario</button>
+    </a>
 
-<a href="/menu/registro">
-    <button type="button">
-        ACTUALIZA catálogos
-    </button>
-</a>
+    <a href="/menu/registro">
+      <button type="button">ACTUALIZA catálogos</button>
+    </a>
 
-<button type="button" onclick="abrirVentana()">
-    IMPRIMIR control específico
-</button>
-
+    <p-button label="IMPRIMIR control específico" />
+  </div>
 </body>

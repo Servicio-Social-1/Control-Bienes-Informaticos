@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.texto_header{
+.texto_header {
   color: rgb(68, 68, 68);
   font-size: 10px;
   line-height: 0.5;
@@ -15,14 +15,8 @@
   margin-right: 20px;
 }
 
-.columna1 {
-  display: grid;
-}
-
-.columna2 {
-  display: grid;
-  height: 100px;
-  margin-left: 20px;
+.titulo {
+  text-align: center;
 }
 
 .informacionGeneral {
@@ -33,9 +27,17 @@
   margin-bottom: 30px;
 }
 
+.columna1 {
+  display: grid;
+}
+
+.columna2 {
+  display: grid;
+  height: 100px;
+  margin-left: 20px;
+}
+
 .informacionTecnica {
-  display: inline-grid;
-  width: 100%;
   justify-content: center;
 }
 
@@ -43,12 +45,63 @@
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
+  width: 100%;
+  justify-content: center;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 30px 200px auto auto;
+  margin-top: 20px;
+  justify-content: center;
+}
 
-.titulo {
-    text-align: center;
-    
+.checkboxes {
+  display: grid;
+  height: 75%;
+  margin-top: 10px;
+}
+
+.perifericos {
+  display: grid;
+  width: 10%;
+}
+
+.specs2 {
+  display: grid;
+  height: 10%;
+}
+
+.perifericos2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 30px;
+  height: 10%;
+}
+
+.estados {
+  display: grid;
+  justify-content: center;
+}
+
+#estadoActual {
+  width: 800px;
+}
+
+#observaciones {
+  height: 200px;
+}
+
+.usuarioYresponsable {
+  display: grid;
+  place-content: center;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
 }
 
 label {

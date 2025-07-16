@@ -12,15 +12,15 @@ import { ResponsableEspecifico } from './responsable-especifico/responsable-espe
 import { Login } from './login/login';
 
 export const routes: Routes = [
-    {path: '', component: Login},
-    {path: 'inicio', component: Inicio},
-    {path: 'registro', component: Registro},
-    {path: 'DAP-SIS', component: DAPSIS},
-    {path: 'IPyDirFisica', component: IPyDirFisica},
-    {path: 'equipos-sin-IP', component: EquiposSinIP},
-    {path: 'IP-Disponible', component: IpDisponible},
-    {path: 'area', component: Area},
-    {path: 'area-Especifica', component: AreaEspecifica},
-    {path: 'responsable', component: Responsable},
-    {path: 'responsable-Especifico', component: ResponsableEspecifico},
+  // {path: '', component: Login},
+  { path: '', component: Inicio },
+  { path: 'registro', component: Registro },
+  { path: 'DAP-SIS', component: DAPSIS },
+  { path: 'IPyDirFisica', component: IPyDirFisica },
+  { path: 'equipos-sin-IP', component: EquiposSinIP },
+  { path: 'IP-Disponible', component: IpDisponible },
+  { path: 'area', component: Area },
+  { path: 'area-Especifica', component: AreaEspecifica },
+  { path: 'responsable', component: Responsable },
+  { path: 'responsable-Especifico', component: ResponsableEspecifico },
 ];
