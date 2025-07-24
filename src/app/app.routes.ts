@@ -12,7 +12,7 @@ import { ResponsableEspecifico } from './responsable-especifico/responsable-espe
 import { Login } from './login/login';
 
 export const routes: Routes = [
-  // {path: '', component: Login},
+  { path: 'login', component: Login },
   { path: '', component: Inicio },
   { path: 'registro', component: Registro },
   { path: 'DAP-SIS', component: DAPSIS },

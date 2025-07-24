@@ -161,6 +161,14 @@
     <input name="area" type="text" id="small-input" />
 
     <label for="responsable"> Responsable </label>
+    <p-autocomplete
+      [(ngModel)]="selectedItem"
+      [virtualScroll]="true"
+      [suggestions]="filteredItems"
+      (completeMethod)="filterItems($event)"
+      optionLabel="Responsable"
+      [dropdown]="true"
+    />
     <select name="responsable" id="responsable">
       <option>Seleccione una opción</option>
     </select>
